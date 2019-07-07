@@ -7,3 +7,4 @@ Emm's Kitchen 2.0
   -Bootstrap
   -Angular 2+
   -Google Map Api
+-No template were used
