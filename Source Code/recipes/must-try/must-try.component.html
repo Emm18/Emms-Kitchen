@@ -1,0 +1,46 @@
+<div id="divFilipinoSpecial" class="col-xs-12 slideanim">
+    <div class="row">
+        <h1>FILIPINO SPECIALS</h1>
+        <nav id="mainNavbar" class="navbar">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                    <li> <button class="btn btn-primary btn-block" (click)="foodCheck('sinigang')"> Sinigang </button>
+                    </li>
+                    <li> <button class="btn btn-primary btn-block" (click)="foodCheck('adobo')"> Adobo </button> </li>
+                    <li> <button class="btn btn-primary btn-block" (click)="foodCheck('karekare')"> Kare-Kare </button>
+                    </li>
+                    <li> <button class="btn btn-primary btn-block" (click)="foodCheck('tinola')">Tinolang Manok
+                        </button> </li>
+                    <li> <button class="btn btn-primary btn-block" (click)="foodCheck('bicolExpress')"> Bicol Express
+                        </button> </li>
+                    <li> <button class="btn btn-primary btn-block" (click)="foodCheck('bulalo')"> Bulalo </button> </li>
+                    <li> <button class="btn btn-primary btn-block" (click)="foodCheck('menudo')"> Menudo </button> </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+
+
+
+
+
+    <div class="row" *ngIf="foodTitle != '' && foodResult != '' && foodResultDefinition !=''">
+        <div class="col-sm-12">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    {{foodTitle}}
+                </div>
+                <div class="panel-body">
+                        <div class="thumbnail">
+                                <img [src]="foodResult" class="img-responsive img-thumbnail img-fluid">
+                            <div class="caption">
+                                <p>{{foodResultDefinition}}</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

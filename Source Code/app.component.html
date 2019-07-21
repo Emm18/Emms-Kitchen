@@ -1,0 +1,51 @@
+<body>
+  <div class="row">
+    <div class="container-fluid container">
+      <nav id="mainNavbar" class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar" #myNavbar>
+            <ul class="nav navbar-nav">
+              <li> <a routerLink="/home"> <span class="glyphicon glyphicon-home"></span> Home </a></li>
+              <li> <a routerLink="/recipes/recipeMustTry"> <span class="glyphicon glyphicon-list-alt"></span>  Recipes </a> </li>
+              <li> <a routerLink="/about"> <span class="glyphicon glyphicon-info-sign"></span> About </a> </li>
+              <li> <a routerLink="/contact"> <span class="glyphicon glyphicon-phone-alt"></span> Contact </a> </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+
+
+
+  <div class="row center-block">
+    <div class="col-xs-12">
+        <router-outlet></router-outlet>
+    </div>
+  </div>
+
+  <br/>
+  <br/>
+  <br/>
+  
+  <footer class="container-fluid text-center">
+    <p>Made by <a href="https://github.com/Emm18" title="Emm">Mark Ronald Torio</a></p>
+    <p style="font-size: 10px">link will redirect to personal website</p>
+    <span><img class="iconLinks" src="assets/icons/linkedin.png"/></span>linkedin - 
+    <span><img class="iconLinks" src="assets/icons/git.svg"/></span>github - 
+    <span><img class="iconLinks" src="assets/icons/portfolio.png"/></span>portfolio - 
+    <span><img class="iconLinks" src="assets/icons/resume.png"/></span>resume - 
+    <span><img class="iconLinks" src="assets/icons/cover.png"/></span>cover letter
+    
+    <p style="font-size: 10px">Some of the images/description/etc are from the internet. All used just for learning purposes. No copyright were intended</p>
+    <p style="font-size: 10px">still work in progress</p>
+  </footer>
+</body>

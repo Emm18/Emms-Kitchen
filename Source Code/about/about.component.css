@@ -1,0 +1,17 @@
+.span4 img {
+    margin-right: 10px;
+}
+.span4 .img-left {
+    float: left;
+}
+.span4 .img-right {
+    float: right;
+}
+
+.container-fluid {
+    padding: 0px 0px;
+}
+
+p{
+    font-size: 20px;
+}

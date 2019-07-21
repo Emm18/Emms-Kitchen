@@ -1,0 +1,41 @@
+<div id="divFilipinoSpecial" class="col-xs-12 slideanim">
+  <div class="row">
+    <h1>NOODLES</h1>
+    <nav id="mainNavbar" class="navbar">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li> <button class="btn btn-primary btn-block" (click)="foodCheck('lomi')"> Lomi </button></li>
+          <li> <button class="btn btn-primary btn-block" (click)="foodCheck('palabok')"> Pansit Palabok </button> </li>
+          <li> <button class="btn btn-primary btn-block" (click)="foodCheck('miki')"> Pancit Miki Guisado </button> </li>
+          <li> <button class="btn btn-primary btn-block" (click)="foodCheck('sotanghon')"> Sotanghon </button> </li>
+          <li> <button class="btn btn-primary btn-block" (click)="foodCheck('chickenMami')"> Chicken Mami </button> </li>
+          <li> <button class="btn btn-primary btn-block" (click)="foodCheck('habhab')"> Pancit HabHab </button> </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+
+
+
+
+
+
+  <div class="row" *ngIf="foodTitle != '' && foodResult != '' && foodResultDefinition !=''">
+    <div class="col-sm-12">
+      <div class="panel panel-info">
+          <div class="panel-heading">
+              {{foodTitle}}
+          </div>
+          <div class="panel-body">
+                  <div class="thumbnail">
+                          <img [src]="foodResult" class="img-responsive img-thumbnail img-fluid">
+                      <div class="caption">
+                          <p>{{foodResultDefinition}}</p>
+                      </div>
+                  </div>
+          </div>
+      </div>
+  </div>
+  </div>
+</div>
